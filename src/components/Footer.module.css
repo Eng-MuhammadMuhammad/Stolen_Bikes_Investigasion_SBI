@@ -1,0 +1,62 @@
+.footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: #c2c5cf;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #facc15;
+}
+
+.footer select {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #c2c5cf;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.footer select:focus {
+  outline: none;
+  border-color: #facc15;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .footer .container > * {
+    margin-bottom: 1rem;
+  }
+
+  .footer .container > *:last-child {
+    margin-bottom: 0;
+  }
+}
